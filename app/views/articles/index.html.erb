@@ -13,9 +13,13 @@
     <tbody>
          <% @articles.each do |article| %>
             <tr>
-                <th> <%= article.title %> </th>
-                <th> <%= article.description %> </th>
-                <th>Actions</th>
+                <td> <%= article.title %> </td>
+                <td> <%= article.description %> </td>
+                <td> 
+                <%= link_to 'Read', article_path(article)%>
+                <%= link_to 'Edit', article_path(article), method: :edit %>
+                <%= link_to 'Delete', article_path(article), method: :delete %>
+                </td>
             </tr>
         <% end %>
     </tbody>
