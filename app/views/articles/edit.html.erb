@@ -1,4 +1,6 @@
 <h1>  Edit an article </h1>
+<%= link_to 'Home', root_path %>
+<%= link_to 'About', about_path %>
 
 <% if @article.errors.any? %>
     <h2>The following errors prevented the article from being saved  </h2>
@@ -30,3 +32,5 @@
 </p>
 
 <% end%>
+
+<%= link_to 'Cancel and return to articles', articles_path %>

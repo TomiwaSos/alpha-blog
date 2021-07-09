@@ -1,23 +1,4 @@
-<h1> Welcome to my first blog page nade with ruby </h1>
-<p> For this assignment we have to launch a rails application and create two pages being home (the root) and an about page (/about) which will showcase information about myself.<p>
-<p> As i havent coded in html in a while im going to play around with a couple tags below</p>
+<h1> Welcome to my Homepage </h1>
 
-<%#Useful html tags %>
-
-<table>
-<thead>First Name</thead>
-<thead>Surname</thead>
-<thead>Email Address</thead>
-<tr>
-<td>Tomiwa</td>
-<td>Sosanya</td>
-<td>tomiwa@doyoucustoms.com</td>
-</tr>
-</table>
-
-<a href='link to another page or site'> This link goes nowhere</a>
-<br>
-
-<img src ='Link to image iwth directory'>
-
-<p> if the tag you wanted is not on this page use w3 schools, its great</p>
+<%= link_to 'Articles', articles_path %>
+<%= link_to 'About', about_path %>
