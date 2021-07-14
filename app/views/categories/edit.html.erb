@@ -1,4 +1,4 @@
-<h1 class ="text-center mt-4"> Create a new Category</h1>
+<h1 class ="text-center mt-4"> Edit Category Name</h1>
 
 <div class="container">
   <%= render 'shared/errors', obj: @category %>
@@ -10,7 +10,7 @@
   </div>
 
   <div class="row justify-content-center mb-3">
-    <%= link_to '[ Cancel and return to categories ]', categories_path ,class: "text-danger justify-content-center"%>
+    <%= link_to '[ Cancel and return to categories ]', category_path(@category) ,class: "text-danger justify-content-center"%>
   </div>
 
 </div>
