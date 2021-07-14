@@ -19,6 +19,15 @@
           </div>
         </div>
 
+        <div class="form-group row">
+          <%= f.label :category ,class: "col-2 col-form-label"%>
+          <div class="col-10">
+            <%= f.collection_check_boxes :category_ids, Category.all, :id, :name do |f| %>
+              <% f.label(class: "checkbox-inline mr-3 input_checkbox") {f.check_box(class: "checkbox") + f.text } %>
+            <% end %>
+          </div>
+        </div>
+
         <div class="form-group row justify-content-center">
           <%= f.submit class: "btn btn-outline-light" %>
         </div>
